@@ -1,0 +1,66 @@
+/*----------------------- INDEX CSS--------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.headerIndex{
+    background-color: #dcc69c;
+    color: #93435b;
+    font-family: "Montserrat";
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navBar ul{
+    background-color: #93435b;
+    color: white;
+    font-family: "Montserrat";
+    font-size: 1.2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem;
+}
+.navBar a {
+    color: white;
+    padding: 0 30px;
+}
+.navBar a:hover {
+    background-color: white;
+    color: black;
+}
+
+/*--------------Box Article-------------*/
+.content{
+    display: grid;
+    grid-template-rows: 120px;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas:
+    "mainIndex asideIndex";
+}
+.mainIndex{
+    background-color: #e5bfbc;
+    grid-area: mainIndex;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.mainIndex section{
+    font-family: "Montserrat";
+    justify-content: center;
+}
+.asideIndex {
+    background-color: rgb(75, 51, 126);
+    display: flex;
+    flex-direction: column;
+    grid-area: asideIndex;
+    text-align: center;
+    padding: 2rem;
+    margin: 1rem;
+}
