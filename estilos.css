@@ -29,7 +29,7 @@
 
 .navBar a {
     color: white;
-    padding: 0 30px;
+    padding: 0 10px;
 }
 
 .navBar a:hover {
@@ -67,7 +67,7 @@
     justify-content: center;
     gap: 1rem;
 }
-.footerIndex a {
+.footerIndex a{
     color: white;
 }
 
