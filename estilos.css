@@ -61,6 +61,7 @@
 .footerIndex{
     background-color: #764d3e;
     color: white;
+    font-family:"Monserrat";
     padding: 1rem;
     display: flex;
     align-items: center;
@@ -69,6 +70,7 @@
 }
 .footerIndex a{
     color: white;
+    padding: 10px;
 }
 
 @media (min-width: 576px){
