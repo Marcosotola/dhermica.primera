@@ -11,7 +11,8 @@
 .bodyIndex {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 80px 50px 700px 500px 150px;
+   /* grid-template-rows: 80px 50px 700px 500px 150px;*/
+   grid-auto-rows:max-content ;
     grid-template-areas:
         "headerIndex"
         "navBar"
@@ -37,7 +38,7 @@
 }
 
 .navBar ul {
-    
+
     color: white;
     font-family: "Montserrat";
     font-size: 15px;
@@ -60,6 +61,7 @@
 /*--------------Box Main-------------*/
 
 .mainIndex {
+    grid-area: mainIndex;
     background-color: #e5bfbc;
     display: flex;
     flex-direction: column;
@@ -72,16 +74,31 @@
 .mainIndex div {
     padding: 0.5rem;
 }
+.promo1 img{
+width: 300px;
+}
+.promo2 img{
+ width: 300px;
+}
+.turnos img{
+width: 300px;
+}
+.tratamientos img{
+ width: 300px;
+}
+
 .asideIndex {
-    font-family:'Merriweather Sans', sans-serif;
+    font-family: 'Merriweather Sans', sans-serif;
     font-size: x-large;
     color: #78374b;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    grid-area: asideIndex;
 }
-.asideIndex div{
+
+.asideIndex div {
     padding: 0.5rem;
 }
 
@@ -101,10 +118,13 @@
     justify-content: center;
     align-items: center;
 }
+
 .footerIndex p {
-font-size: 10px;
-padding: 0px 40px;
+    font-size: 13px;
+    text-align: center;
+    padding: 10px 40px;
 }
+
 .footerIndex ul {
     line-height: 2rem;
     font-size: 15px;
@@ -118,52 +138,87 @@ padding: 0px 40px;
     .bodyIndex {
         display: grid;
         grid-template-columns: 50% 50%;
-        grid-template-rows: 80px 53px 680px 150px;
+        /*grid-template-rows: 80px 53px 680px 150px;*/
+        grid-auto-rows: max-content;
         grid-template-areas:
             "headerIndex headerIndex"
             "navBar navBar"
             "mainIndex asideIndex"
             "footerIndex footerIndex";
     }
-.navBar ul{
-    font-size: 18px;
-}
-.asideIndex{
-    background-color: #e5bfbc;
-    justify-content: space-between;
-}
-
-}
-@media (min-width: 1200px){
-
-.bodyIndex {
-    display: grid;
-    grid-template-columns: 250px auto;
-    grid-template-rows: 80px 400px 400px 150px;
-    grid-template-areas:
-        "headerIndex headerIndex"
-        "navBar mainIndex"
-        "navBar asideIndex"
-        "footerIndex footerIndex";
-}
-.navBar ul{
-    flex-direction: column;
-    font-size: 25px;
-}
-.mainIndex{
-    flex-direction: row;
-    justify-content: space-around;
-}
-.mainIndex div{
-    font-size: 45px;
-}
-.asideIndex{
-    flex-direction: row;
-    justify-content: space-around;
+.tituloPromo{
+    font-size: x-large;
 }
 .mimate{
-font-size: 30px;
+    font-size: x-large;
 }
+    .navBar ul {
+        font-size: 18px;
+    }
+
+    .asideIndex {
+        background-color: #e5bfbc;
+        justify-content: space-between;
+    }
+    .promo1 img{
+        width: 330px;
+        }
+        .promo2 img{
+         width: 330px;
+        }
+        .turnos img{
+        width: 330px;
+        margin-top: 2.5rem;
+        }
+        .tratamientos img{
+         width: 330px;
+        }
+        .footerIndex p{
+            font-size: 18px;
+        }
+        .footerIndex a {
+            font-size: 20px;
+        }
 
 }
 
+@media (min-width: 1200px) {
+
+    .bodyIndex {
+        display: grid;
+        grid-template-columns: 250px auto;
+        grid-template-rows: 80px 400px 400px 150px;
+        grid-template-areas:
+            "headerIndex headerIndex"
+            "navBar mainIndex"
+            "navBar asideIndex"
+            "footerIndex footerIndex";
+    }
+
+    .navBar ul {
+        display: flex;
+        flex-direction: column;
+        font-size: 25px;
+        justify-content: space-around;
+        height: 100%;
+    }
+
+    .mainIndex {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .mainIndex div {
+        font-size: 45px;
+    }
+
+    .asideIndex {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .mimate {
+        font-size: 30px;
+    }
+
+}
